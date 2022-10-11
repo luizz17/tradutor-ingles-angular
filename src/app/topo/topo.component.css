@@ -1,0 +1,16 @@
+.navbar{
+    background: #1cb0f6;
+    margin: 10px;
+}
+
+.container-fluid{
+    text-align:center;
+    display:inline-block;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: 30px;
+}
