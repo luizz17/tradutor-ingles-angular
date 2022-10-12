@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="vol-sm-6">
                     <h6>{{instrucao}}</h6>
-                    <p>{{frases[1].fraseEng}}</p>
+                    <p>{{rodadaFrase.fraseEng}}</p>
 
                     <div class="form-group">
                         <textarea 
@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary">Verificar</button>
+                    <button type="button" class="btn btn-primary" (click)="verificarResposta()">Verificar</button>
                 </div>
                 
             </div>
