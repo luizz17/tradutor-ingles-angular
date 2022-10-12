@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app1';
+
+  public jogoEmAndamento: boolean = true
+  public tipoEncerramento: string | undefined
+
+  public encerrarJogo(tipo: string): void{
+    console.log(tipo);
+    this.jogoEmAndamento = false
+    this.tipoEncerramento = tipo
+  }
+
+  public reiniciarJogo(): void{
+    this.jogoEmAndamento = true
+    this.tipoEncerramento = undefined
+
+  }
 }
